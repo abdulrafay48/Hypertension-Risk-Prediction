@@ -99,9 +99,14 @@ The included visualizations show that respondents with hypertension generally re
 
 ## Suggested Visual Assets for the Repository
 
-- `image-1.jpg` — Predicted Probability by Actual Class.
-- `image-2.jpg` — Probability Distribution by Class.
-- `image-3.jpg` — Predicted Probability Distribution (All Splits).
+![Predicted Probability by Actual Class](image-1.png)  
+This plot shows how the model’s predicted risk scores differ between respondents who actually have hypertension and those who do not. It helps show whether the model is assigning higher probabilities to the positive class.  
+
+![Probability Distribution by Class](image-2.png)  
+This histogram compares the distribution of predicted probabilities for the two classes side by side. It is useful for showing class separation and where the model’s predictions overlap.  
+
+![Predicted Probability Distribution (All Splits)](image-3.png)  
+This plot shows the overall spread of predicted probabilities across the dataset. It gives a broader view of how the model is scoring cases, which is helpful for understanding risk patterns.  
 
 These plots help communicate that the model produces meaningful risk separation and supports ranked-risk interpretation instead of only binary output. This is especially useful when demonstrating model understanding to recruiters, instructors, or project reviewers.
 
@@ -132,26 +137,6 @@ This project is a strong portfolio example because it shows:
 - Parsing semi-structured reference documentation.
 - Model interpretation through probability distributions.
 - Reproducible dataset and artifact generation.
-
-## Repository Structure
-
-```text
-.
-├── Hypertension-Prediction.ipynb
-├── README.md
-├── image.jpg
-├── image-2.jpg
-├── image-3.jpg
-├── dataset.csv
-├── wdataset.csv
-├── recodeddataset.csv
-├── recodedwithoriginal.csv
-├── analysisdictionary.json
-├── analysisdictionaryrecode.json
-├── variables.csv
-├── valuelabels.csv
-└── BPmodel.joblib
-```
 
 ## How to Run
 
